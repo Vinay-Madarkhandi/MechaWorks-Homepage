@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
+
+[data-theme="light"] {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .project-info {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #000;
+    height: 100vh;
+  }
+  
+  .left-wala-main,
+  .right-wala-main {
+    background-color: #8A2BE2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .tag {
+    margin-bottom: 0.5rem;
+  }
+  
+  .tag div {
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+    font-weight: 500;
+  }
+  
+  .title {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .data {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .data_item {
+    text-align: center;
+  }
+  
+  .data_item div:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8A2BE2;
+  }
+  
+  .data_item div:last-child {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 0.25rem;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+  
+  .left-wala-main .content {
+    text-align: center;
+  }
+  
+  .content_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .content_item div:first-child {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .right-wala-main .content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .right-wala-main .content img {
+    border-radius: 0.5rem;
+  }
+  
+  .btn {
+    margin-top: auto;
+  }
+  
+  .btn a {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .btn a:hover {
+    background-color: #333;
+  }
+  
+}
