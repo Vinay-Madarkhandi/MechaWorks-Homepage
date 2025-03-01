@@ -8,16 +8,16 @@ import Footer from "@/components/global/footer";
 
 export default function Home() {
   return (
-    <main className=" max-xl:hidden ">
+    <main className="w-full">
       <Navbar />
-      <section>
+      <section id="hero">
         <Hero />
       </section>
-      <section>
+      <section id="contents">
         <Contents />
       </section>
-      <section>
-        <h1 className="text-center mt-20 text-7xl">
+      <section id="worker">
+        <h1 className="text-center mt-10 md:mt-16 lg:mt-20 text-4xl md:text-5xl lg:text-7xl">
           <span className="text-violet-900">W</span>
           <span className="text-violet-800">o</span>
           <span className="text-violet-700">r</span>
@@ -29,8 +29,8 @@ export default function Home() {
         </h1>
         <Worker />
       </section>
-      <section>
-        <h1 className="text-center mt-20 text-7xl">
+      <section id="client">
+        <h1 className="text-center mt-10 md:mt-16 lg:mt-20 text-4xl md:text-5xl lg:text-7xl">
           <span className="text-violet-900">C</span>
           <span className="text-violet-800">l</span>
           <span className="text-violet-700">i</span>
@@ -42,7 +42,7 @@ export default function Home() {
         </h1>
         <Client />
       </section>
-      <section>
+      <section id="footer">
         <Footer />
       </section>
     </main>
