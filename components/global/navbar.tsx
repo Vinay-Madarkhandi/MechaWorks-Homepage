@@ -5,9 +5,8 @@ import React, { useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
-type Props = {};
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {

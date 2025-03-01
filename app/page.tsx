@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import Navbar from "@/components/global/navbar";
 import { Hero } from "@/components/global/hero";
 import { Worker } from "@/components/global/worker";
